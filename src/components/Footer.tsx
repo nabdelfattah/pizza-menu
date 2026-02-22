@@ -9,7 +9,9 @@ export default function Footer() {
 
   return (
     <footer>
-      <p>{isOpen ? "We are currently open!" : "Sorry, we are closed."}</p>
+      <p className="text-sm">
+        {isOpen ? "We are currently open!" : "Sorry, we are closed."}
+      </p>
     </footer>
   );
 }

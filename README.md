@@ -74,7 +74,7 @@ Future versions may evolve into a full e-commerce platform where users can order
 
 ### 📸 Preview
 
-Coming soon...
+[Fast React Pizza co.](https://fast-react-pizza-co-menu.netlify.app/)
 
 ### 📄 License
 

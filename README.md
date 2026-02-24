@@ -1,75 +1,81 @@
-# React + TypeScript + Vite
+# 🍕 Fast React Pizza Co.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern pizza menu website built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+### 📌 Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The first version of Fast React Pizza Co. is focused on displaying the restaurant's pizza menu in a clean interface.
 
-## React Compiler
+This release is a menu showcase website only — customers can browse available pizzas, view details, and explore the menu visually.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Future versions may evolve into a full e-commerce platform where users can order pizza online.
 
-Note: This will impact Vite dev & build performances.
+### 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- Tailwind CSS
+- Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎯 Current Features (v1)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Display pizza menu items
+- Clean and modern UI
+- Component-based architecture
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🔮 Future Plans
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Responsive layout
+- Add shopping cart functionality
+- Online ordering & checkout system
+- User authentication
+- Order management
+
+### 🛠 Installation & Setup
+
+1- Clone the repository
+`git clone https://github.com/nabdelfattah/pizza-menu.git`
+
+2- Navigate into the project folder
+`cd fast-react-pizza-co`
+
+3- Install dependencies
+`npm install`
+
+4- Run development server
+`npm run dev`
+
+### 📂 Project Structure
+
+```
+.
+├── public/
+│   ├── favicon.ico
+│   └── pizzas/
+│       ├── focaccia.jpg
+│       ├── funghi.jpg
+│       ├── margherita.jpg
+│       ├── prosciutto.jpg
+│       ├── salamino.jpg
+│       └── spinaci.jpg
+├── src/
+│   ├── components/
+│   │   ├── Button.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Homepage.tsx
+│   │   ├── Menu.tsx
+│   │   ├── Navbar.tsx
+│   │   └── PizzaCard.tsx
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── vite.config.ts
+└── tsconfig.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📸 Preview
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Coming soon...
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 📄 License
+
+This project is for educational and portfolio purposes.
